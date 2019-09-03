@@ -1,0 +1,17 @@
+<div class="container">
+  <ul class="table">
+    <li class="table-header row list-group-item">
+      <div class="table-header row w-100">
+        <div class="title col">Title</div>
+        <div class="title col">Subtitle</div>
+        <div class="title col">Year</div>
+        <div class="title col">Place</div>
+        <div class="title col">Country</div>
+        <div class="title col">Action</div>
+      </div>
+    </li>
+    <li class="list-item row list-group-item" *ngFor="let about of abouts">
+      <app-about [about]="about"></app-about>
+    </li>
+  </ul>
+</div>
